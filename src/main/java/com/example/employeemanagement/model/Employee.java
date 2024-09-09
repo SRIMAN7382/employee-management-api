@@ -14,15 +14,18 @@ public class Employee {
     private String name;
     private String email;
     private String department;
+    private String salary;
 
     // Constructors
     public Employee() {
     }
 
-    public Employee(String name, String email, String department) {
+    public Employee(String name, String email, String department, String salary) {
         this.name = name;
         this.email = email;
         this.department = department;
+        this.salary = salary;
+
     }
 
     // Getters and Setters
@@ -56,5 +59,12 @@ public class Employee {
 
     public void setDepartment(String department) {
         this.department = department;
+    }
+
+    public String getSalary() {
+        return salary;
+    }
+    public void setSalary(String salary) {
+        this.salary = salary;
     }
 }
